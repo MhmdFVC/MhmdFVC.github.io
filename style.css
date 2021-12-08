@@ -1,0 +1,25 @@
+body {
+  background-color: black;
+  color: white;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2%;
+  padding-right: 2%;
+  font-size: 15px;
+  font-family: Helvetica;
+}
+a {
+  color: #A8DFFF;	
+}
+nav {
+  border-style: double;
+  border-color: grey;
+}
+.navlist {
+  list-style-type: none;
+}
+.navitem {
+  display: inline;
+  padding-right: 20px;
+}
