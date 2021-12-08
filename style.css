@@ -21,5 +21,10 @@ nav {
 }
 .navitem {
   display: inline;
-  padding-right: 20px;
+  padding-right: 12px;
+}
+@media only screen and (max-width: 700px) {
+  .navitem {
+    display: block;
+  }
 }
