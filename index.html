@@ -1,3 +1,28 @@
+<!DOCTYPE html>
 <html>
-<meta http-equiv="Refresh" content="0; url='index.php'" />
+<title>Homepage</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<nav style="max-width:400px; margin-left:auto; margin-right:auto;">
+<ul class="navlist">
+<li class="navitem"><a href="index.html">Home</a></li>
+<li class="navitem"><a href="faqs.html">FAQs</a></li>
+<li class="navitem"><a href="mods.html">Mods</a></li>
+<li class="navitem"><a href="snow-tl.html">SNOW Translation Project</a></li>
+</ul></nav>
+
+<body>
+<p>Yo, I'm some nerd from the Baltimore/DC 'burbs (though I'd rather be elsewhere). I speedrun GTA Vice City, make the occasional mod, and do other miscellanous nerdy things.</p>
+<nav style="border-style: none;">
+<ul class="navlist">
+<li class="navitem"><a target="_blank" href="https://twitch.tv/mhmd_fvc">Twitch</a></li>
+<li class="navitem"><a target="_blank" href="https://youtube.com/107989055567">YouTube</a></li>
+<li class="navitem"><a target="_blank" href="https://twitter.com/srlmhmd">Twitter</a></li>
+</ul></nav>
+
+</body>
+<script> // Navbar
+fetch("navbar.html")
+.then(result => result.text())
+.then(content => {document.getElementById("navbar").innerHTML = content;}); 
+</script>
 </html>
