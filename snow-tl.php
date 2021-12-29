@@ -1,13 +1,7 @@
 <html>
 <title>SNOW Translation Project</title>
 <link href="style.css" rel="stylesheet" type="text/css" />
-
-<nav><ul class="navlist">
-<li class="navitem"><a href="index.html">Home</a></li>
-<li class="navitem"><a href="vc-faq.html">VC General Speedrun FAQ</a></li>
-<li class="navitem"><a href="vc-faq-100.html">VC 100% Speedrun FAQ</a></li>
-<li class="navitem"><a href="snow-tl.html">SNOW Translation Project</a></li>
-</ul></nav>
+<?php include_once "navbar.html" ?>
 
 <body>
 <h1>SNOW Translation Project</h1>
