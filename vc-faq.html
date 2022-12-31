@@ -12,19 +12,29 @@
 <body>
 <h1>Vice City General Speedrun FAQ</h1>
 
-<b>Q: What's all this "onmission" stuff about?</b>
-<p>A: For example, you can <b>start a rampage + Vigilante at the same time</b> ("rampage-starting") (using a saved replay; rampages can be activated when picked up in a replay), and then <b>cancel Vigilante so that the game thinks you are not on a "mission"</b>, when in fact the rampage is still running.<br><br>
-In this example, you'd then be able to start a mission, and then fail or complete the rampage, at which point the game once again sets the mission state to 0, meaning you are not considered to be on a mission (the variable in code is <b>$ONMISSION</b>, abbreviated to "om". <b>om0 = "not on a mission"</b>, <b>om1 = "on a mission"</b>). From here, you can start other missions while still actually on a mission, producing highly glitchy (and sometimes fast) results. onmission state can also be manipulated using save markers and phone calls.</p>
+<b>Q: What's all this "onmission" or "om" stuff about?</b>
+<p>A: It's manipulation of the <b>$ONMISSION variable</b> (abbreviated to simply <b>"om"</b>). This variable dictates whether you are in freeroam mode or not, and therefore whether you can start missions or not.</p>
+
+<p>For example, you can start a rampage + Vigilante at the same time <b>("rampage-starting")</b> by using a saved replay, as rampages can be activated when picked up in a replay. $ONMISSION is set to 1 twice. But if you then cancel Vigilante, the game will set <b>$ONMISSION to 0</b>, as though you are in freeroam mode, when in fact the rampage is still running.</p>
+
+<p>Now you're able to start any mission while the rampage is still active, and then fail or complete the rampage, at which point the game sets $ONMISSION to 0, meaning you are not considered to be on a mission. This basic mechanic is heavily abused to induce instant mission passes (or instapasses), as well as other effects that result in quicker completion.</p>
 <br>
 <b>Q: Why is the game in Asian?</b>
-<p>A: Full-game speedruns of Vice City are typically done on the Japanese version because it is one of the so-called <b>"Haitian-friendly" versions</b> (look it up if you don't know what that means). This means <b>the mission script has been slightly modified from the original game</b>, which in turn is relevant for different <b>instapasses</b> (see below if you don't know what that is).<br><br>
-The only other Haitian-friendly PC versions are the German Green Pepper version (no rampages and two cut missions, severely altering the route in a bad way and its 100% isn't considered 100% for leaderboard purposes), the Australian version (game crashes on Dildo Dodo and upon entering the Ammu-Nation menu), and the Polish version (technically unofficial and same issues as Australian version).<br>
-You can technically use the Australian version for No SSU since Ammu-Nation isn't used in the route, but there's no real advantage to being able to switch languages nowadays anyway.</p>
+<p>A: Full-game speedruns of Vice City are typically done on the Japanese version because it is one of the so-called <b>"Haitian-friendly"</b> versions (look it up if you don't know what that means). This means <b>the mission script has been slightly modified from the original game</b>, which in turn is relevant for different <b>instapasses</b> (see below if you don't know what that is).</p>
+
+Why specifically the Japanese version, you may ask? Well, the other Haitian-friendly PC versions have some issues. They are:
+<ul>
+<li>The German Green Pepper version (no rampages and two cut missions, severely altering the route in a bad way and its 100% isn't considered 100% for leaderboard purposes)
+<li>The Australian version (game crashes on Dildo Dodo and upon entering the Ammu-Nation menu)
+<li>The Polish version (technically unofficial and same issues as Australian version)
+</ul>
+
+<p>You can use the Australian version for No SSU since Ammu-Nation isn't used in the route, but there is no practical advantage in doing so.</p>
 <br>
 <b>Q: OK, but what's an instapass?</b>
-<p>A: It's shorthand for instant pass (<b>further abbreviated to "IP"</b>), i.e. instantly completing a mission by starting it while on a certain part of another mission.<br><br>
-  For example, if you start Distribution while on the first part of Hit the Courier <b>om0</b> (on the Japanese version), it will instantly pass Distribution.<br><br>
-  It just so happens that the part of Hit the Courier's mission script before you obtain the plates has about the same offset into the mission code as the mission pass section for Distribution on the Japanese version, and for some reason starting another mission carries over the first mission's script offset. Thereby which it is "instapassed". (<a target="_blank" href="https://cdn.discordapp.com/attachments/908364377021886524/917919389813190666/unknown.png">Here's a visual example courtesy of Patrick</a>)<br><br>
+<p>A: It's shorthand for instant pass, which is further abbreviated to <b>"IP"</b>. It refers to instantly passing a mission by starting it while on a certain part of another mission. This requires you to be <b>om0</b>, an unintended behavior.<br><br>
+  For example, if, on a Haitian-friendly version of the game, you start Distribution while on the first part of Hit the Courier, Distribution will pass.<br><br>
+  It just so happens that the part of Hit the Courier's mission script before you obtain the plates has about the same offset into the mission code as the mission pass section for Distribution on Haitian-friendly versions, and for some reason starting another mission carries over the first mission's script offset. Thereby which it is instapassed. (<a target="_blank" href="https://cdn.discordapp.com/attachments/908364377021886524/917919389813190666/unknown.png">Here's a visual example courtesy of Patrick</a>)<br><br>
  
 There are quite a few different instapasses, many of which can be observed in All Missions and 100% runs.<br>
 A non-exhaustive list of the instapasses you may see (many are 'Japanese-exclusive'):<br>
