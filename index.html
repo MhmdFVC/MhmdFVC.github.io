@@ -2,29 +2,21 @@
 <html>
 <title>Mhmd's Site - Homepage</title>
 <link href="style.css" rel="stylesheet" type="text/css" />
-<nav style="max-width:450px; margin-left:auto; margin-right:auto;">
-<ul class="navlist">
-<li class="navitem"><a href="index.html">Home</a></li>
-<li class="navitem"><a href="faqs.html">FAQs</a></li>
-<li class="navitem"><a href="vc.html">Vice City Stuff</a></li>
-<li class="navitem"><a href="snow-tl.html">SNOW Translation Project</a></li>
+<nav class="navbar"><ul class="navlist">
+    <li class="navitem">Home</li>
+    <li class="navitem"><a href="vc/vc.html">Vice City Stuff</a></li>
+    <li class="navitem"><a href="blog/blog.html">Blog</a></li>
+    <li class="navitem"><a href="snow-tl/snow-tl.html">SNOW Translation Project</a></li>
 </ul></nav>
 
 <body>
 <h3>Mhmd's Site</h3>
-<p>Greetings, and welcome to my humble repository of knowledge. Here you will find my speedrun (and other) FAQs, Vice City mod and tool archives, and info and downloads for the Snow PE translation project.</p>
+<p>Greetings, and welcome to my site. Here you will find Vice City speedrunning- and non-speedrunning-related mod and tool archives and FAQs, as well as info and downloads for the Snow PE translation project.</p>
 <nav style="border-style: none;">
 <ul class="navlist">
-<li class="navitem"><a target="_blank" href="https://twitch.tv/mhmd_fvc">Twitch</a></li>
-<li class="navitem"><a target="_blank" href="https://youtube.com/107989055567">YouTube</a></li>
-<li class="navitem"><a target="_blank" href="https://twitter.com/srlmhmd">Twitter</a></li>
-<li class="navitem"><a target="_blank" href="https://github.com/MhmdFVC">GitHub</a></li>
+    <li class="navitem"><a target="_blank" href="https://twitch.tv/mhmd_fvc">Twitch</a></li>
+    <li class="navitem"><a target="_blank" href="https://youtube.com/107989055567">YouTube</a></li>
+    <li class="navitem"><a target="_blank" href="https://github.com/MhmdFVC">GitHub</a></li>
 </ul></nav>
-
 </body>
-<script> // Navbar
-fetch("navbar.html")
-.then(result => result.text())
-.then(content => {document.getElementById("navbar").innerHTML = content;}); 
-</script>
 </html>

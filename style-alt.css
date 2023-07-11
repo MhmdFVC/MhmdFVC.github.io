@@ -1,0 +1,46 @@
+body {
+	background-color: #fafafa;
+	color: black;
+	max-width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 2%;
+	padding-right: 2%;
+	font-size: 15px;
+	font-family: Helvetica;
+}
+
+a {
+	color: #0077b3;	
+}
+
+nav.navbar {
+	top: 0;
+	width: 100%;
+	border-style: outset;
+	border-color: black;
+	box-sizing: border-box;
+	background-color: #e6f2ff;
+	position: sticky;
+	display: inline-block;
+}
+
+nav.navbar ul {
+	list-style-type: none;
+}
+
+nav.navbar li {
+	display: inline-flex;
+	padding-right: 12px;
+}
+
+@media only screen and (max-width: 700px) {
+	.navitem {
+		display: block;
+	}
+}
+@media only screen and (hover: none) {
+	.navitem {
+		display: block;
+	}
+}

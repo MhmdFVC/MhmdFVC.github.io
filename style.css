@@ -1,6 +1,6 @@
 body {
-  background-color: #0C0C0C;
-  color: white;
+  background-color: rgb(250, 250, 250);
+  color: #0C0C0C;
   max-width: 700px;
   margin-left: auto;
   margin-right: auto;
@@ -10,11 +10,22 @@ body {
   font-family: Helvetica;
 }
 a {
-  color: #A8DFFF;	
+  color: #00a2ff;	
 }
 nav {
   border-style: double;
   border-color: grey;
+}
+.navbar {
+  max-width:450px;
+  margin-left:auto;
+  margin-right:auto;
+  top: 0;
+	border-style: outset;
+	border-color: black;
+	box-sizing: border-box;
+	background-color: #e6f2ff;
+	position: sticky;
 }
 .navlist {
   list-style-type: none;
