@@ -34,6 +34,15 @@ nav {
   display: inline;
   padding-right: 12px;
 }
+.blogtitle {
+  display: inline-block;
+}
+.blogtext {
+  font-family: 'Times New Roman';
+  font-size: 16px;
+  text-indent: 32px;
+  line-height: 1.25;
+}
 @media only screen and (max-width: 700px) {
   .navitem {
     display: block;
