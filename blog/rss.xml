@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Mhmd's Blog</title>
+        <link>https://mhmdfvc.github.io/blog/blog.html</link>
+        <description>Mhmd's blog.</description>
+        <item>
+            <title>Japan's Far-Right</title>
+            <link>https://mhmdfvc.github.io/blog/2023/07-18-japans-far-right.html</link>
+            <guid>https://mhmdfvc.github.io/blog/2023/07-18-japans-far-right.html</guid>
+            <pubDate>Tue, 18 Jul 2023 16:00:00 GMT</pubDate>
+            <description>A ramble about the ultranationalist movement in Japan, how it influenced the country/empire in WWII and how it still lingers to this day.</description>
+        </item>
+    </channel>
+</rss>
