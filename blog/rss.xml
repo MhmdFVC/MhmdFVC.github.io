@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Mhmd's GitHub Blog</title>
+        <link>https://mhmdfvc.github.io/blog</link>
+        <description>Mhmd's GitHub blog.</description>
+        <item>
+            <title>Fixing an Edge Case in GTA Vice City (JP)'s No-CD Crack</title>
+            <link>https://mhmdfvc.github.io/blog/20261026</link>
+            <guid>https://mhmdfvc.github.io/blog/20261026</guid>
+            <pubDate>Mon, 26 Oct 2026 21:00:00 GMT</pubDate>
+            <description>A strange error in the no-CD crack of an obscure version of my favorite video game led me to my first successful assembly hacking project.</description>
+        </item>
+    </channel>
+</rss>

@@ -34,15 +34,36 @@ nav {
   display: inline;
   padding-right: 12px;
 }
+
+.blogpage {
+	max-width: min(90%, 700px);
+	line-height: 1.35;
+}
 .blogtitle {
-  display: inline-block;
+    display: inline-block;
 }
 .blogtext {
+	border-style: double;
+	border-color: black;
+	padding: 10px;
+	box-sizing: border-box;
+	background-color: #e6f2ff80;
+}
+.blogpic {
+	max-width: 100%;
+}
+.caption {
+	font-size: 14px;
+	font-style: italic;
+}
+
+.blogtext_old {
   font-family: 'Times New Roman';
   font-size: 16px;
   text-indent: 32px;
   line-height: 1.25;
 }
+
 @media only screen and (max-width: 700px) {
   .navitem {
     display: block;
